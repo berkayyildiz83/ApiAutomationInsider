@@ -65,7 +65,7 @@ public class TestCase {
         //Get with new name and Assertion
         given().log().all().when().get("v2/pet/1")
                 .then().log().all().assertThat().statusCode(200).
-                body("name",equalTo("newpuppy"));
+                body("name",equalTo("newpuppy_WILLNOTBEASSERTED"));
 
 
         //Delete Pet
